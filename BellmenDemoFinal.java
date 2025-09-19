@@ -43,7 +43,7 @@ public class BellmenDemoFinal {
                     u=edge[K][0];
                     v=edge[K][1];
                     if(distance[u]+W[u][v]<distance[v]){
-                        distance[V]=distance[u]+W[u][v];
+                        distance[v]=distance[u]+W[u][v];
                         parent[v]=u;
                     }
                 }
@@ -51,7 +51,7 @@ public class BellmenDemoFinal {
     for( int K=1;K<=E;K++)
     {
         u=edge[K][0];
-        V=edge[K][1];
+        v=edge[K][1];
         if(distance[u]+W[u][v]<distance[v])
             flag=0;
     }
